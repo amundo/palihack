@@ -1,3 +1,4 @@
+# http://mail.python.org/pipermail/python-list/2006-January/364933.html
 def distance(a, b):
     """
     Computes the levenshtein distance between two strings
