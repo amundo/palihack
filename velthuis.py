@@ -4,7 +4,7 @@
 rules = u"""ā	aa
 ī	ii
 ū	uu
-ṁ	.m
+ṃ	.m
 ṇ	.n
 ñ	~n
 ṭ	.t
