@@ -40,7 +40,7 @@ dumpscheme( velthuis2unicode)
 def transliterate(scheme, text):
   transliterated = []
   for before, after in scheme:
-    text = text.replace(before,after)
+    text = text.replace(before,after) # lousy, i know
   return text
   
 
