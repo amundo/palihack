@@ -1,5 +1,0 @@
-Pali is a morphologically rich language, like Sanskrit or Latin.
-
-For this reason dealing with it always gets my mind thinking about automatic ways to study morphology. The present repo is a place to keep such experiments.  
-
-python pali.py uppa
