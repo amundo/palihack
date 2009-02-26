@@ -1,4 +1,4 @@
-== Pali Morphology ==
+h1. Pali Morphology
 
 Pali is a morphologically rich language, like Sanskrit or Latin.
 
@@ -18,3 +18,25 @@ For this reason dealing with it always gets my mind thinking about automatic way
     60 uppannā
     87 uppannaṃ
     295 uppajjati
+
+h2. Thu Feb 26 11:48:55 EST 2009
+
+Some of you may be wondering, "why the $@!$%@ would you want to count the Pali words that start with _uppa?_"
+
+A fair question. 
+
+This is the first step in a larger project, which is intended to answer questions like the following:
+
+h3. Given a particular words, can you find other words of the same paradigm?
+
+I give you the word "uppajjati". Can you give me back a list of words from the corpus that have the same grammatical paradigm?
+
+h3. Can you automatically generate lists of paradigms?
+
+Once you can answer the first question, it should be able to generate a list of such paradigms. This means that you could automatically generate something that serves a general purpose like that of a grammatical category (a part of speech tag). 
+
+It doesn't have to just with Pali; in theory whatever works for this language could be interesting for any language with an affixing morphology. If feed this program the Latin word "amo," it should give you back "amat, amemus, amabit" and a bazillion other forms of that verb. (Note that we don't expect anything resembling the traditional ordering; if anything, we'd probably order the forms by frequency.) And if the word were a noun, say "libro," we'd want back forms from that noun's declension.
+
+The point to the whole project is that this would be purely statistical, and thus language independent. I'm focusing on a particular language because I find that trying to think about this stuff in abstract terms makes me dizzy. It's easier for me to try to first solve a problem like "give me words like _uppajjati_" than "write a morphological inference engine."  
+
+Will it work? Will it be useful? We'll see.
