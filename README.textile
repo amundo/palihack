@@ -4,4 +4,17 @@ Pali is a morphologically rich language, like Sanskrit or Latin.
 
 For this reason dealing with it always gets my mind thinking about automatic ways to study morphology. The present repo is a place to keep such experiments.
 
-    python pali.py uppa
+    $ python pali.py uppa
+    UPPA
+    
+    2 uppajji
+    2 uppannanti
+    2 uppannaphalo
+    ...etc...
+    38 uppajjanti
+    38 uppajjeyyuṃ
+    40 uppajjeyya
+    48 uppanno
+    60 uppannā
+    87 uppannaṃ
+    295 uppajjati

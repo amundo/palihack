@@ -59,4 +59,4 @@ if __name__ == "__main__":
  counts = []
  for p, fq in palifq.items():
    if p.startswith(stem): counts.append((fq, p))
- for fq, p in sorted(counts): print fq,p
+ for fq, p in sorted(counts): print fq,p.encode('utf-8')
