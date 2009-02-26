@@ -21,7 +21,6 @@ def flippairs(pairs):
   return [(b,a) for a,b in pairs]
 
 for rule in rules:
-  print rule
   unicode, velthuis = rule.split()
   scheme.append((velthuis, unicode))
 

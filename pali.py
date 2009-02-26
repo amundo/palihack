@@ -23,7 +23,7 @@ def depunctuate(text):
   else: res.append(c)
  return ''.join(res)
 
-mn = glob('/home/pat/Documents/dhamma/Pali_Tipitaka_utf8/Majjhima_utf8/*')
+mn = glob('./Majjhima/*')
 
 corpus = u''
 
@@ -51,5 +51,12 @@ def byvalue(d):
 
 if __name__ == "__main__":
  import sys
+ from velthuis import transliterate, velthuis2unicode
  stem = sys.argv[1]
- print stem.encode('utf-8')
+ stem = transliterate(velthuis2unicode, stem)
+ print stem.upper().encode('utf-8')
+ print
+ counts = []
+ for p, fq in palifq.items():
+   if p.startswith(stem): counts.append((fq, p))
+ for fq, p in sorted(counts): print fq,p
