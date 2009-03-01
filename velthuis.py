@@ -45,6 +45,6 @@ def transliterate(scheme, text):
 
 if __name__ == "__main__":
   import sys
-  source  = sys.argv[1].decode('utf-8')
+  source  = sys.stdin.read().decode('utf-8')
   print transliterate(velthuis2unicode, source)
 
