@@ -40,3 +40,17 @@ It doesn't have to just with Pali; in theory whatever works for this language co
 The point to the whole project is that this would be purely statistical, and thus language independent. I'm focusing on a particular language because I find that trying to think about this stuff in abstract terms makes me dizzy. It's easier for me to try to first solve a problem like "give me words like _uppajjati_" than "write a morphological inference engine."  
 
 Will it work? Will it be useful? We'll see.
+
+
+h2. Sat Feb 28 18:36:40 EST 2009
+
+h3. In search of the aorist. 
+
+In chapter 4 of Warder's _Introduction to Pali_, he introduces the aorist form of verbs. It's a kind of past tense, apparently. 
+
+Here's the paradigm:
+
+{background:#ddd}. |&nbsp;|Singular|Plural|
+|3rd person|upasa.mkami, "he approached|upasa.mkami.msu|
+|2rd person|upasa.mkami|upasa.mkamittha|
+|1st person|upasa.mkami.m|upasa.mkami.mhaa (or -imha)|
