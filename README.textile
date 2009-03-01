@@ -76,8 +76,21 @@ Keeping in mind that our goal is to be as language-independent as possible, how 
       for i in range(len(formlist)-1):
         stem = LCS(stem, formlist[i])   
       return stem
-        
     
     formlist = "upasaṃkami upasaṃkamiṃsu upasaṃkami upasaṃkamittha upasaṃkamiṃ upasaṃkamiṃhā upasaṃkamimha".split()
     
     print extract_stem(formlist)
+
+So if we run that we get:
+
+   ~/palihack$ python lcs_upsamkam.py 
+   upasaṃkami
+
+Heh, all the suffixes in this whole paradigm happen to begin with "i", which makes it look as if the stem were "upasaṃkami" instead of "upasaṃkam". That's kind of interesting. 
+
+But it looks like we're heading down the wrong track. If our goal is to "exemplify the Pali aorist," we need to 1) figure out what the aorist suffixes are and 2) collect words in the corpus which occur with those suffixes.   
+
+So what if I were to ask you to do this by hand, right now, what would you do? Well, you'd look at the list of words I gave you (the ones in @formlist@ above), and you'd go through text looking for words that "shared a suffix." Now what does that mean? It means, if you saw:
+
+
+  

@@ -42,6 +42,8 @@ def transliterate(scheme, text):
     text = text.replace(before,after) # lousy, i know
   return text
   
+def v2u(text): return transliterate(velthuis2unicode, text)
+def u2v(text): return transliterate(unicode2velthuis, text)
 
 if __name__ == "__main__":
   import sys
