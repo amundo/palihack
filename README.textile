@@ -59,25 +59,25 @@ Okay so, who cares. But let's take this as a simple (and rather arbitrary) test 
 
 Keeping in mind that our goal is to be as language-independent as possible, how can we extract that "upasaṃkam" bit from a list of the forms in the table?  (Sort of cheating to assume we _start_ with that paradigm, but we need to start somewhere.) Looks like a job for the <a title="Algorithm implementation/Strings/Longest common substring - Wikibooks, collection of open-content textbooks" href="http://en.wikibooks.org/wiki/Algorithm_implementation/Strings/Longest_common_substring#Python">Longest common substring</a> (LCS) algorithm.
 
-def LCS(S, T):
-  # from Wikibook link above
-  m = len(S); n = len(T)
-  L = [[0] * (n+1) for i in xrange(m+1)]
-  lcs = 0
-  for i in xrange(m):
-    for j in xrange(n):
-      if S[i] == T[j]:
-        L[i+1][j+1] = L[i][j] + 1
-        lcs = max(lcs, L[i+1][j+1])
-  return S[:lcs]
- 
-def extract_stem(formlist):
-  stem = LCS(formlist[0], formlist[1])
-  for i in range(len(formlist)-1):
-    stem = LCS(stem, formlist[i])   
-  return stem
+    def LCS(S, T):
+      # from Wikibook link above
+      m = len(S); n = len(T)
+      L = [[0] * (n+1) for i in xrange(m+1)]
+      lcs = 0
+      for i in xrange(m):
+        for j in xrange(n):
+          if S[i] == T[j]:
+            L[i+1][j+1] = L[i][j] + 1
+            lcs = max(lcs, L[i+1][j+1])
+      return S[:lcs]
+     
+    def extract_stem(formlist):
+      stem = LCS(formlist[0], formlist[1])
+      for i in range(len(formlist)-1):
+        stem = LCS(stem, formlist[i])   
+      return stem
+        
     
-
-formlist = "upasaṃkami upasaṃkamiṃsu upasaṃkami upasaṃkamittha upasaṃkamiṃ upasaṃkamiṃhā upasaṃkamimha".split()
-
-print extract_stem(formlist)
+    formlist = "upasaṃkami upasaṃkamiṃsu upasaṃkami upasaṃkamittha upasaṃkamiṃ upasaṃkamiṃhā upasaṃkamimha".split()
+    
+    print extract_stem(formlist)
