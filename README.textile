@@ -51,6 +51,6 @@ In chapter 4 of Warder's _Introduction to Pali_, he introduces the aorist form o
 Here's the paradigm:
 
 {background:#ddd}. |&nbsp;|Singular|Plural|
-|3rd person|upasa.mkami, "he approached|upasa.mkami.msu|
-|2rd person|upasa.mkami|upasa.mkamittha|
-|1st person|upasa.mkami.m|upasa.mkami.mhaa (or -imha)|
+|3rd person|upasaṃkami, "he approached|upasaṃkamiṃsu|
+|2rd person|upasaṃkami|upasaṃkamittha|
+|1st person|upasaṃkamiṃ|upasaṃkamiṃhā (or -imha)|
